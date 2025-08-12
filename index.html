@@ -1,1 +1,623 @@
-ghgfh
+
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>GO3 Studio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+
+    <!--font awesome-->
+    <link href="https://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+  </head>
+<style>
+	input{
+		display:none;
+	}
+	.col-md-15{
+		    width: 16.66%;
+	}.col-md-16{
+		    width: 14.28%;
+		    float: left;
+	}
+</style>
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>-->
+      <img src="images/menu.png" class="humberger-menu navbar-burger" onclick="openNav()" width="60" navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      
+      <a class="navbar-brand" href="index.php"><img src="images/logo.png" class="img-responsive" width="150"></a>
+      
+    </div>
+    
+     <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.php">HOME</a></li>
+        <li><a href="our-works.php">OUR WORKS</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="mobile-website.php">Mobile Website</a></li>
+            <li><a href="e-commerce.php">Ecommerce Shopping Cart</a></li>
+<!--             <li><a href="content-management.php">Page Types</a></li> -->
+            <li><a href="restaurant-reservation.php">Restaurant Reservation</a></li>
+            <li><a href="appointment-booking.php">Appointment Booking</a></li>
+            <li><a href="content-management.php">Content Management</a></li>
+            <li><a href="feedback-guest.php">Feedback or Guest List</a></li>
+<!--             <li><a href="services.php">SEO</a></li> -->
+            <li><a href="qr-code.php">QR CODE</a></li>
+          </ul>
+        </li>
+        <li><a href="forms.php">FORMS</a></li>
+        <li><a href="contact-us.php">CONTACT US</a></li>
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<!--<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.php">HOME</a>
+    <a href="our-works.php">OUR WORKS</a>
+    <a href="services.php">SERVICES</a>
+    <a href="contact-us.php">CONTACT US</a>
+  </div>
+</div>-->
+    <section id="home" class="our-works-head">
+        <div class="container top-title">
+            <div class="top-title-con" data-aos="fade-up">
+                <h1 class="pull-center f-size">Our Latest Works</h1> 
+            </div>
+        </div>
+    </section>
+       	
+	<input type="radio" name="sort" id="sort-all">
+	<input type="radio" name="sort" id="sort-restaurant">
+	<input type="radio" name="sort" id="sort-beauty">
+	<input type="radio" name="sort" id="sort-professional">
+        
+    <section id="ourworks" class="section-auto wrapper2" data-aos="fade-up">
+
+        <div class="menu2">
+			<div class="col-md-3 pull-center cat-con"><label for="sort-all" class="label-pad">All</label></div>
+			<div class="col-md-3 pull-center cat-con"><label for="sort-restaurant" class="label-pad">Restaurant</label></div>
+			<div class="col-md-3 pull-center cat-con"><label for="sort-beauty" class="label-pad">Beauty</label></div>
+			<div class="col-md-3 pull-center cat-con"><label for="sort-professional" class="label-pad">Professional</label></div>
+		</div>
+      
+      	<div style="clear:both"></div>
+        
+      	<div class="content2">
+<!--
+			<div data="restaurant">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-cn-web-t7.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://chinese7.go3studio.com/" target="_blank">
+						<div class="text">Chinese Restaurant Web T7</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="restaurant">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-cn-web-t8.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://chinese8.go3studio.com/" target="_blank">
+						<div class="text">Chinese Restaurant Web T8</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="restaurant">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-sushi-web-t7.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://japanese7.go3studio.com/" target="_blank">
+						<div class="text">Sushi & Hibachi Web T7</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="restaurant">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-sushi-web-t8.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://japanese8.go3studio.com/" target="_blank">
+						<div class="text">Sushi & Hibachi Web T8</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="restaurant">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-cajun-seafood-web-t7.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://seafood7.go3studio.com/" target="_blank">
+						<div class="text">Cajun Seafood Web T7</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="restaurant">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-cajun-seafood-web-t8.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://seafood8.go3studio.com/" target="_blank">
+						<div class="text">Cajun Seafood Web T8</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="restaurant">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-hotpot-bbq-web-t7.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://hotpot7.go3studio.com/" target="_blank">
+						<div class="text">Hot Pot & BBQ Web T7</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="restaurant">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-hotpot-bbq-web-t8.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://hotpot8.go3studio.com/" target="_blank">
+						<div class="text">Hot Pot & BBQ Web T8</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="restaurant">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-asian-buffet-web-t7.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://buffet7.go3studio.com/" target="_blank">
+						<div class="text">Asian Buffet Web T7</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="restaurant">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-asian-buffet-web-t8.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://buffet8.go3studio.com/" target="_blank">
+						<div class="text">Asian Buffet Web T8</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="restaurant">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-ramen-house-web-t7.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://ramen7.go3studio.com/" target="_blank">
+						<div class="text">Ramen House Web T7</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="restaurant">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-ramen-house-web-t8.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://ramen8.go3studio.com/" target="_blank">
+						<div class="text">Ramen House Web T8</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="restaurant">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-pho-noodle-web-t7.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://pho7.go3studio.com/" target="_blank">
+						<div class="text">Pho Noodle Web T7</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="restaurant">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-pho-noodle-web-t8.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://pho8.go3studio.com/" target="_blank">
+						<div class="text">Pho Noodle Web T8</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="restaurant">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-poke-bowl-web-t7.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://poke7.go3studio.com/" target="_blank">
+						<div class="text">Poke Bowl Web T7</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="restaurant">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-poke-bowl-web-t8.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://poke8.go3studio.com/" target="_blank">
+						<div class="text">Poke Bowl Web T8</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="restaurant">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-bakery-bubble-tea-web-t7.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://bakery7.go3studio.com/" target="_blank">
+						<div class="text">Bakery/Bubble Tea Web T7</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="restaurant">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-bakery-bubble-tea-web-t8.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://bakery8.go3studio.com/" target="_blank">
+						<div class="text">Bakery/Bubble Tea Web T8</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="beauty">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-nail-beauty-web-t7.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://nail7.go3studio.com/" target="_blank">
+						<div class="text">Nail Beauty Web T7</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="beauty">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-nail-beauty-web-t8.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://nail8.go3studio.com/" target="_blank">
+						<div class="text">Nail Beauty Web T8</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="beauty">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-massage-spa-web-t7.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://massage7.go3studio.com/" target="_blank">
+						<div class="text">Massage Spa Web T7</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="beauty">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-massage-spa-web-t8.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://massage8.go3studio.com/" target="_blank">
+						<div class="text">Massage Spa Web T8</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="beauty">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-hair-salon-web-t7.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://hair7.go3studio.com/" target="_blank">
+						<div class="text">Hair Salon Web T7</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="beauty">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-hair-salon-web-t8.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://hair8.go3studio.com/" target="_blank">
+						<div class="text">Hair Salon Web T8</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="beauty">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-dental-web-t7.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://dental7.go3studio.com/" target="_blank">
+						<div class="text">Dental Clinic Web T7</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="beauty">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-dental-web-t8.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://dental8.go3studio.com/" target="_blank">
+						<div class="text">Dental Clinic Web T8</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="professional">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-law-web-t7.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://law7.go3studio.com/" target="_blank">
+						<div class="text">Law Office Web T7</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+			<div data="professional">
+			<div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/resto-law-web-t8.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://law8.go3studio.com/" target="_blank">
+						<div class="text">Law Office Web T8</div>
+					</a>
+				</div>
+			</div>
+		</div>
+-->
+			<div data="restaurant">
+			    <div class="col-md-3 no-pad item containering">
+				<img src="images/webpage/web-t7r.jpg" class="img-responsive">
+				<div class="overlayer">
+					<a href="https://www.gogohibachi.com/" target="_blank">
+						<div class="text">Restaurant Web T7</div>
+					</a>
+				</div>
+			    </div>
+		    </div> 
+
+			<div data="beauty">
+    			<div class="col-md-3 no-pad item containering">
+    				<img src="images/webpage/web-t7s.jpg" class="img-responsive">
+    				<div class="overlayer">
+    					<a href="https://footonespa.com/" target="_blank">
+    						<div class="text">Salon Web T7</div>
+    					</a>
+    				</div>
+    			</div>
+		    </div>
+	
+    		<div data="restaurant">
+    			<div class="col-md-3 no-pad item containering">
+    				<img src="images/webpage/web-sr.jpg" class="img-responsive">
+    				<div class="overlayer">
+    					<a href="https://www.ez4merchant.com/" target="_blank">
+    						<div class="text">Restaurant Web Single</div>
+    					</a>
+    				</div>
+    			</div>
+    		</div>
+		
+			<div data="beauty">
+    			<div class="col-md-3 no-pad item containering">
+    				<img src="images/webpage/web-ss.jpg" class="img-responsive">
+    				<div class="overlayer">
+    					<a href="https://www.go3store.com/" target="_blank">
+    						<div class="text">Salon Web Single</div>
+    					</a>
+    				</div>
+    			</div>
+	    	</div>
+	    	
+			<div data="restaurant">
+    			<div class="col-md-3 no-pad item containering">
+    				<img src="images/webpage/web-t8r.jpg" class="img-responsive">
+    				<div class="overlayer">
+    					<a href="https://www.0degreect.com/" target="_blank">
+    						<div class="text">Restaurant Web T8</div>
+    					</a>
+    				</div>
+    			</div>
+		    </div>
+		    
+			<div data="restaurant">
+    			<div class="col-md-3 no-pad item containering">
+    				<img src="images/webpage/web-t8s.jpg" class="img-responsive">
+    				<div class="overlayer">
+    					<a href="https://chinachef386.com/" target="_blank">
+    						<div class="text">Salon Web T8</div>
+    					</a>
+    				</div>
+    			</div>
+	    	</div>
+
+			<div data="restaurant">
+    			<div class="col-md-3 no-pad item containering">
+    				<img src="images/webpage/web-t9r.jpg" class="img-responsive">
+    				<div class="overlayer">
+    					<a href="https://cool-sprinkles-a6b2c1.netlify.app/" target="_blank">
+    						<div class="text">Restaurant Web T9</div>
+    					</a>
+    				</div>
+    			</div>
+		    </div>
+		    
+		    <div data="restaurant">
+    			<div class="col-md-3 no-pad item containering">
+    				<img src="images/webpage/web-t10r.jpg" class="img-responsive">
+    				<div class="overlayer">
+    					<a href="https://taupe-alfajores-e8e2e7.netlify.app/" target="_blank">
+    						<div class="text">Restaurant Web T10</div>
+    					</a>
+    				</div>
+    			</div>
+	    	</div>
+	    	
+			<div data="beauty">
+			    <div class="col-md-3 no-pad item containering">
+				    <img src="images/webpage/web-t10s.jpg" class="img-responsive">
+				    <div class="overlayer">
+    					<a href="https://statuesque-arithmetic-678625.netlify.app/" target="_blank">
+    						<div class="text">Salon Web T10</div>
+    					</a>
+				    </div>
+			    </div>
+	    	</div>
+	    	
+	    	<div data="beauty">
+            	<div class="col-md-3 no-pad item containering">
+            		<img src="images/webpage/web-t12s.jpg" class="img-responsive">
+            		<div class="overlayer">
+            			<a href="https://incandescent-pika-b85127.netlify.app" target="_blank">
+            				<div class="text">Salon Web T12</div>
+            			</a>
+            		</div>
+            	</div>
+            </div>
+
+            <div data="beauty">
+            	<div class="col-md-3 no-pad item containering">
+            		<img src="images/webpage/web-t14s.jpg" class="img-responsive">
+            		<div class="overlayer">
+            			<a href="https://bejewelled-caramel-bfe886.netlify.app/locations/3014" target="_blank">
+            				<div class="text">Salon Web T14</div>
+            			</a>
+            		</div>
+            	</div>
+            </div>
+	    	
+		</div>
+        <div style="clear:both"></div>
+    </section>
+
+    <section id="#" class="footer">
+  <div class="container pull-center">
+     <img src="images/logo-footer.png" class="footer-logo">
+     <div class="footer-tagline">WEB DESIGN • BRANDING • MARKETING</div>
+     <div class=""><p><a href="terms-and-agreement.php">Terms &amp; Agreement</a></p></div>
+     <div class="social-icons pull-center">
+       <ul class="footer-social pull-center">
+        <li><a href="https://www.facebook.com/GO3-Solutions-Inc-472697819451495/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+<!--        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+        <li><i class="fa fa-google" aria-hidden="true"></i></li>-->
+        <li><a href="https://www.linkedin.com/company/go3-solutions-inc-" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+		</ul>
+     </div>
+     <div style="clear:both; margin-bottom:30px;"></div>
+     <div class="col-md-4">50 Broad Street, Ste 1701 New York, NY 10004</div>
+     <div class="col-md-4">Tel: +1 (888) 377-3818 | Fax: +1 (888) 406-0777</div>
+     <div class="col-md-4">Email : tech@go3solutions.com</div>
+  </div>
+</section>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-96085728-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-96177085-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.go3globalhost.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--animations effect scroll-->
+    <script src="js/aos.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
+        <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
+  </body>
+</html>
